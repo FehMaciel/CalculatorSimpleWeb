@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.calculator {
+    background-color: #859ead;
+    width: 350px;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 15px 15px 25px #00000067;
+}
+
+.div_viewer {
+    width: auto;
+    height: 80px;
+    margin: 15px;
+    border-radius: 9px;
+    background-color: #f2f2f2;
+    text-align: right;
+    margin-bottom: auto;
+    position: relative;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+.div_viewer h1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px 15px 5px 0;
+    font-family: 'Lilita One', cursive;
+    max-width: 80% !important;
+    padding-right: 5px;
+}
+.div_viewer h5 {
+    font-size: 15pt;
+    position: absolute;
+    right: 0;
+    margin: 5px 15px 0 0;
+    font-family: 'Lilita One', cursive;
+}
+.div_viewer h3 {
+    font-size: 15pt;
+    position: absolute;
+    right: 0;
+    margin: 5px 40px 0 0;
+    font-family: 'Lilita One', cursive;
+    max-width: 80% !important;
+    
+
+}
+
+.calculator_btn {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    width: auto;
+    height: 75%;
+}
+
+
+.button {
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d9d9d9;
+}
+
+#clear {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: #f0c519;
+}
+#clear:hover {
+    background-color: #ddb61a;
+}
+
+#backspace {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #f0c519;
+
+}
+
+#divide {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: #f8a7a0;
+}
+#divide:hover {
+    background-color: #dd928b;
+}
+#multiply:hover {
+    background-color: #dd928b;
+}
+#subtract:hover {
+    background-color: #dd928b;
+}
+#add:hover {
+    background-color: #dd928b;
+}
+
+#seven {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#eight {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#nine {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#multiply {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: #f8a7a0;
+
+}
+
+#four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#six {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#subtract {
+    grid-column: 4;
+    grid-row: 3;
+    background-color: #f8a7a0;
+
+}
+
+#one {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#two {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#three {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#add {
+    grid-column: 4;
+    grid-row: 4;
+    background-color: #f8a7a0;
+
+}
+
+#zero {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    background-color: #f0c519;
+
+}
+
+#decimal {
+    grid-column: 3;
+    grid-row: 5;
+    background-color: #f0c519; 
+}
+
+#equals {
+    grid-column: 4;
+    grid-row: 5;
+    background-color: #f0c519;
+}
+#equals:hover {
+    background-color: #d6b017;
+}
+#decimal:hover {
+    background-color: #d6b017;
+}
+#zero:hover {
+    background-color: #d6b017;
+}
+#backspace:hover {
+    background-color: #d6b017;
+}
+
